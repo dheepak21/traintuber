@@ -16,6 +16,9 @@ app.get("/gallery", (req, res) => {
 app.get("/news", (req, res) => {
     res.render("news");
 });
+app.get("/videos", (req, res) => {
+    res.render("videos");
+})
 
 app.get("/about", (req, res) => {
     res.render("about");
