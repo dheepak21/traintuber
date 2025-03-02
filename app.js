@@ -30,7 +30,7 @@ app.get("/about", (req, res) => {
 
 // Start the server
 const PORT = process.env.PORT || 3000;
-const SERVER_URL = `https://your-render-app-url.onrender.com`; // Replace with your Render URL
+const SERVER_URL = `https://traintuber.onrender.com`;
 
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
