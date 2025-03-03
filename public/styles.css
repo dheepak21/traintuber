@@ -87,12 +87,12 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Heading shadow */
 }
 .highlight {
-    color: #E39A7B; /* Peach color */
+    color: #160267; /* Peach color */
     font-weight: bold;
 }
 
 .red-text {
-    color: #FF4A4A;
+    color: #f30606;
     font-weight: bold;
 }
 
