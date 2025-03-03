@@ -8,5 +8,5 @@ document.addEventListener("DOMContentLoaded", function () {
         slides[currentIndex].classList.add("active"); // Show next
     }
     
-    setInterval(showNextSlide, 7000); 
+    setInterval(showNextSlide, 10000); 
 });

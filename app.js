@@ -26,23 +26,23 @@ app.get("/gallery", (req, res) => {
     const galleryItems = [
         {
             url: "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975645/t7wteuo2z5f5elplu3g1.jpg",
-            title: "Sunrise Express",
-            description: "A breathtaking view of the train journey at sunrise."
+            title: "Coimbatore Jaipur Superfast Express",
+            description: "NULL."
         },
         {
             url: "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975646/train_image_2.jpg",
-            title: "Mountain Pass",
-            description: "Train passing through a scenic mountain landscape."
+            title: "NULL",
+            description: "NULL."
         },
         {
             url: "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975647/train_image_3.jpg",
-            title: "Urban Tracks",
-            description: "A modern high-speed train navigating the city tracks."
+            title: "NULL",
+            description: "NULL."
         },
         {
             url: "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975648/train_image_4.jpg",
-            title: "Countryside Express",
-            description: "A peaceful countryside journey on a vintage train."
+            title: "NULL",
+            description: "NULL."
         }
     ];
 
