@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Train Tuber</title>
+    <title>Gallery - Train Tuber</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
     <header>
         <div class="logo-container">
-            <img src="logo.png" alt="Logo">
+            <img src="/logo.png" alt="Logo">
             <h2>Train Tuber</h2>
         </div>
         <nav class="navbar">
@@ -25,15 +25,26 @@
     <div class="container">
         <h1>Gallery</h1>
         <p>Explore amazing train images and videos!</p>
+
+        <!-- Display Cloudinary Images with Titles & Descriptions -->
+        <div class="image-gallery">
+            <% galleryItems.forEach((item) => { %>
+                <div class="image-container">
+                    <div class="image-title"><%= item.title %></div>
+                    <img src="<%= item.url %>" alt="<%= item.title %>">
+                    <div class="image-description"><%= item.description %></div>
+                </div>
+            <% }) %>
+        </div>
     </div>
 
     <footer>
         <div class="social-icons">
             <a href="https://youtube.com/@traintuber?si=sknCWtsY57DGPSQv" target="_blank">
-                <img src="youtube.png" alt="YouTube">
+                <img src="/youtube.png" alt="YouTube">
             </a>
             <a href="https://www.instagram.com/train_tuber/?igsh=MWw0Nmh5dzVxbHh4OQ==" target="_blank">
-                <img src="instagram.png" alt="Instagram">
+                <img src="/instagram.png" alt="Instagram">
             </a>
         </div>
         <p>© Train Tuber</p>

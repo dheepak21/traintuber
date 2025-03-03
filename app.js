@@ -13,8 +13,32 @@ app.get("/", (req, res) => {
 });
 
 app.get("/gallery", (req, res) => {
-    res.render("gallery");
+    const galleryItems = [
+        {
+            url: "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975645/t7wteuo2z5f5elplu3g1.jpg",
+            title: "Sunrise Express",
+            description: "A breathtaking view of the train journey at sunrise."
+        },
+        {
+            url: "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975646/train_image_2.jpg",
+            title: "Mountain Pass",
+            description: "Train passing through a scenic mountain landscape."
+        },
+        {
+            url: "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975647/train_image_3.jpg",
+            title: "Urban Tracks",
+            description: "A modern high-speed train navigating the city tracks."
+        },
+        {
+            url: "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975648/train_image_4.jpg",
+            title: "Countryside Express",
+            description: "A peaceful countryside journey on a vintage train."
+        }
+    ];
+
+    res.render("gallery", { galleryItems }); 
 });
+
 
 app.get("/news", (req, res) => {
     res.render("news");
