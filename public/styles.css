@@ -86,6 +86,44 @@ h1 {
     color: #23A6D5; /* Teal */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Heading shadow */
 }
+
+/* Slider Container */
+.slider {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    aspect-ratio: 3 / 2; /* Maintains 3:2 aspect ratio */
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Slide Images */
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the frame while maintaining aspect ratio */
+    border-radius: 10px;
+}
+
+/* Active Slide */
+.active {
+    display: block;
+}
+
+/* Smooth Fade Animation */
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
 .highlight {
     color: #160267; /* Peach color */
     font-weight: bold;
@@ -269,6 +307,10 @@ p {
         margin: 20px auto;
         padding: 15px;
     }
+    .slider {
+        width: 100%;
+        aspect-ratio: 3 / 2;
+    }
 }
 
 @media (max-width: 480px) {
@@ -282,6 +324,10 @@ p {
     }
     .video-grid iframe {
         height: 180px;
+    }
+    .slider {
+        width: 100%;
+        aspect-ratio: 3 / 2;
     }
 }
 

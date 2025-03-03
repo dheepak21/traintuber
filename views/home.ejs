@@ -27,6 +27,15 @@
         <p>Your ultimate source for train updates, galleries, and news!</p>
     </div>
 
+    <!-- Image Slider -->
+    <div class="slider">
+        <% sliderImages.forEach((image, index) => { %>
+            <div class="slide <% if(index === 0) { %> active <% } %>">
+                <img src="<%= image %>" alt="Train Image <%= index + 1 %>">
+            </div>
+        <% }) %>
+    </div>
+
     <!-- Footer Section -->
     <footer>
         <div class="social-icons">
@@ -41,5 +50,6 @@
         <p>For Queries, Contact : enquirytraintuber@gmail.com</p>
     </footer>
 
+    <script src="/script.js"></script> <!-- Link JavaScript File -->
 </body>
 </html>

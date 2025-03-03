@@ -7,9 +7,19 @@ const cron = require("node-cron");
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 
-// Define routes
 app.get("/", (req, res) => {
-    res.render("home");
+    const sliderImages = [
+        "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740983413/kexpewocbg3bhue9zbfr.jpg",
+        "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975646/train_image_2.jpg",
+        "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975647/train_image_3.jpg",
+        "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975648/train_image_4.jpg",
+        "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975649/train_image_5.jpg",
+        "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975650/train_image_6.jpg",
+        "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975651/train_image_7.jpg",
+        "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975652/train_image_8.jpg"
+    ];
+
+    res.render("home", { sliderImages });
 });
 
 app.get("/gallery", (req, res) => {
