@@ -8,5 +8,5 @@ document.addEventListener("DOMContentLoaded", function () {
         slides[currentIndex].classList.add("active"); // Show next
     }
     
-    setInterval(showNextSlide, 5000); // Change slide every 5 seconds
+    setInterval(showNextSlide, 7000); 
 });
