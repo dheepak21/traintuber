@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
         "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740994930/arw9i102rpa68wpzkqqc.jpg",
         "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740995585/wxt2adirkmuuezeace84.jpg",
         "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740996607/utfrdj3pe0zvmucpce3f.jpg",
-        "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975649/train_image_5.jpg",
+        "https://res.cloudinary.com/dg3kii8dm/image/upload/v1741062580/sbnkfumlfzgunmlwxmjc.jpg",
         "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975650/train_image_6.jpg",
         "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975651/train_image_7.jpg",
         "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975652/train_image_8.jpg"
