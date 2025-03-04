@@ -61,6 +61,18 @@ app.get("/videos", (req, res) => {
 app.get("/about", (req, res) => {
     res.render("about");
 });
+app.get("/blog1", (req, res) => {
+    res.render("blog1");
+});
+app.get("/blog2", (req, res) => {
+    res.render("blog2");
+});
+app.get("/blog3", (req, res) => {
+    res.render("blog3");
+});
+app.get("/blog4", (req, res) => {
+    res.render("blog4");
+});
 
 // Start the server
 const PORT = process.env.PORT || 3000;
