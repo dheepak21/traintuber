@@ -97,7 +97,7 @@ h1 {
     position: relative;
     width: 90%;
     max-width: 1200px;
-    aspect-ratio: 3 / 2; /* Maintains 3:2 aspect ratio */
+    aspect-ratio: 3 / 2;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
@@ -114,8 +114,33 @@ h1 {
 .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures image fills the frame while maintaining aspect ratio */
+    object-fit: cover;
     border-radius: 10px;
+}
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.slider button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
 
 /* Active Slide */
@@ -315,6 +340,10 @@ p {
     .slider {
         width: 100%;
         aspect-ratio: 3 / 2;
+    }
+    .slider button {
+        padding: 8px 12px;
+        font-size: 20px;
     }
 }
 

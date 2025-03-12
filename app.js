@@ -8,18 +8,7 @@ app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-    const sliderImages = [
-        "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740983413/kexpewocbg3bhue9zbfr.jpg",
-        "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740994930/arw9i102rpa68wpzkqqc.jpg",
-        "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740995585/wxt2adirkmuuezeace84.jpg",
-        "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740996607/utfrdj3pe0zvmucpce3f.jpg",
-        "https://res.cloudinary.com/dg3kii8dm/image/upload/v1741062580/sbnkfumlfzgunmlwxmjc.jpg",
-        "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975650/train_image_6.jpg",
-        "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975651/train_image_7.jpg",
-        "https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975652/train_image_8.jpg"
-    ];
-
-    res.render("home", { sliderImages });
+    res.render("home");
 });
 
 app.get("/gallery", (req, res) => {

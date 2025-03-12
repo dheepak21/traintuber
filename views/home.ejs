@@ -31,12 +31,20 @@
 
     <!-- Image Slider -->
     <div class="slider">
-        <% sliderImages.forEach((image, index) => { %>
-            <div class="slide <% if(index === 0) { %> active <% } %>">
-                <img src="<%= image %>" alt="Train Image <%= index + 1 %>">
-            </div>
-        <% }) %>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="slides">
+            <div class="slide active"><img src="https://res.cloudinary.com/dg3kii8dm/image/upload/v1740983413/kexpewocbg3bhue9zbfr.jpg" alt="Train 1"></div>
+            <div class="slide"><img src="https://res.cloudinary.com/dg3kii8dm/image/upload/v1740994930/arw9i102rpa68wpzkqqc.jpg" alt="Train 2"></div>
+            <div class="slide"><img src="https://res.cloudinary.com/dg3kii8dm/image/upload/v1740995585/wxt2adirkmuuezeace84.jpg" alt="Train 3"></div>
+            <div class="slide"><img src="https://res.cloudinary.com/dg3kii8dm/image/upload/v1740996607/utfrdj3pe0zvmucpce3f.jpg" alt="Train 4"></div>
+            <div class="slide"><img src="https://res.cloudinary.com/dg3kii8dm/image/upload/v1741062580/sbnkfumlfzgunmlwxmjc.jpg" alt="Train 5"></div>
+            <div class="slide"><img src="https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975650/train_image_6.jpg" alt="Train 6"></div>
+            <div class="slide"><img src="https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975651/train_image_7.jpg" alt="Train 7"></div>
+            <div class="slide"><img src="https://res.cloudinary.com/dg3kii8dm/image/upload/v1740975652/train_image_8.jpg" alt="Train 8"></div>
+        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
     </div>
+</div>
 
     <div class="container">
         <h1>Train Tuber Blogs</h1>
