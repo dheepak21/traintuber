@@ -43,6 +43,10 @@ app.get("/news", (req, res) => {
     res.render("news");
 });
 
+app.get("/std", (req, res) => {
+    res.render("std");
+});
+
 app.get("/videos", (req, res) => {
     res.render("videos");
 });
